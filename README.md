@@ -19,3 +19,9 @@ npx create-react-app .
 2. Import TailwindCSS to build things faster
 
 https://tailwindcss.com/docs/guides/create-react-app
+
+3. Start creating a frame
+
+- Divide the page into 3
+1. Banner
+2. 
