@@ -13,21 +13,16 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Header from './components/Header'
+import Navbar from "./components/Navbar"
+import Content from "./components/Content"
 
 function App() {
   return (
     <Router>
       <Header />
-      <nav>
-        <NavLink to="">Home</NavLink>
-        <NavLink to="about">About</NavLink>
-        <NavLink to="contact">Contact</NavLink>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="about" element={<About/>} />
-        <Route path="contact" element={<Contact/>} />
-      </Routes>
+      <Navbar />
+      <Content />
+
       <div>Footer</div>
     </Router>
   );
