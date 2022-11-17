@@ -1,38 +1,40 @@
 import React from "react";
 import {
   BrowserRouter as Router,
+  NavLink,
   Switch,
+  Routes,
   Route,
   Link
 } from "react-router-dom";
 
+// Import pages
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Header from './components/Header'
 
 function App() {
   return (
-    <>
     <Router>
-
-      <div className="h-24 bg-amber-300">
-        <h1 className="text-2xl">Enowiz</h1>
-        <div >
-          <ul className="flex space-x-5">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-              <Link to="/portfolio">Portfolio</Link>
-              <Link to="/contact">Contact</Link>
-              <Link to="/about">About</Link>
-          </ul>
-
-        </div>
-      </div>
+      <Header />
+      <nav>
+        <NavLink to="">Home</NavLink>
+        <NavLink to="about">About</NavLink>
+        <NavLink to="contact">Contact</NavLink>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="about" element={<About/>} />
+        <Route path="contact" element={<Contact/>} />
+      </Routes>
+      <div>Footer</div>
     </Router>
-      <div className="flex flex-row">
-        <div className="h-screen basis-1/4 bg-teal-300">01</div>
-        <div className="basis-3/4">09</div>
-      </div>
-    </>
   );
+}
+
+function Portfolio() {
+  return <h2>Portfolio</h2>;
 }
 
 export default App;
