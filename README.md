@@ -24,4 +24,4 @@ https://tailwindcss.com/docs/guides/create-react-app
 
 - Divide the page into 3
 1. Banner
-2. 
+2.

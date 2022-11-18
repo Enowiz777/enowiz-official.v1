@@ -5,8 +5,9 @@ import {
 
 function Navbar(){
   return (
-    <nav className="flex justify-center space-x-6">
+    <nav className="font-normal flex justify-center space-x-6 m-4">
         <NavLink to="">Home</NavLink>
+        <NavLink to="projects">Projects</NavLink>
         <NavLink to="about">About</NavLink>
         <NavLink to="contact">Contact</NavLink>
     </nav>

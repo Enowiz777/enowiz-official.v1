@@ -9,12 +9,11 @@ import {
 } from "react-router-dom";
 
 // Import pages
-import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
+
 import Header from './components/Header'
 import Navbar from "./components/Navbar"
 import Content from "./components/Content"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -22,8 +21,7 @@ function App() {
       <Header />
       <Navbar />
       <Content />
-
-      <div>Footer</div>
+      <Footer />
     </Router>
   );
 }
