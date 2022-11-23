@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn-primary {
+      @apply mt-2 py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+    .project_box {
+      @apply 
+      w-[70vw]
+      p-4 
+      rounded-xl 
+      border-4
+      border-black
+      shadow-xl 
+    }
+    h3 {
+        @apply text-2xl font-semibold
+
+    }
+    ul {
+        @apply list-inside list-disc indent-2;
+    }
+    p {
+        @apply mt-2
+    }
+  }
