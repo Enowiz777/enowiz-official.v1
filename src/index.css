@@ -9,15 +9,23 @@
     .project_box {
       @apply 
       w-[70vw]
+      m-3
       p-4 
       rounded-xl 
       border-4
       border-black
       shadow-xl 
     }
+
+    /*
+      Create the tag style
+    */
     h3 {
         @apply text-2xl font-semibold
 
+    }
+    h4 {
+      @apply text-xl
     }
     ul {
         @apply list-inside list-disc indent-2;
