@@ -2,8 +2,16 @@ import React from 'react';
 
 function Contact(){
   return (
-    <div>
-      <p>This is the Contact Page</p>
+    <div className="project_box text-center ">
+      <h4>
+        <b>Enowiz LLC,</b>
+        <br></br>
+        Enoch Park - CEO/Software Engineer
+        <br></br>
+        Email: enoch.park@enowiz.com
+        <br></br>
+        Please contact us for any questions!
+      </h4>
     </div>
   )
 }

@@ -6,4 +6,4 @@
 
 - Add a margin or padding for the header.
 - Add a link to the project card.
-- 
+- Add a contact information
